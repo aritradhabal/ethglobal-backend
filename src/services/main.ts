@@ -354,8 +354,6 @@ export const getNode = (address: string): boolean => {
 };
 
 export const logState = () => {
-  // await saveGraph();
-  // await loadGraph("s5OsHcB-9Emt93_4I5qr0aqKLIWzILnz91aFw1oKfCY");
   return {
     node: state.nodes,
     relationship: state.relationships,
