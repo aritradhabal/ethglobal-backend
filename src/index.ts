@@ -23,8 +23,14 @@ import cors from "cors";
 
 const app = express();
 app.use(express.json());
-app.use(cors({ origin: "https://v5j7rrl9-3000.inc1.devtunnels.ms" }));
-
+app.use(
+  cors({
+    origin: [
+      "https://v5j7rrl9-3000.inc1.devtunnels.ms",
+      "https://ethmatch-frontend.vercel.app",
+    ],
+  })
+);
 app.post("/create", (request: Request, response: Response) => {
   try {
     const userData: UserData = request.body;
