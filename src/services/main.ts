@@ -294,9 +294,97 @@ const userData3: UserData = {
     { address: "0xdef456...", content: "You should message him", counter: 3 },
   ],
 };
-// const userData4: UserData = {
+const userData4: UserData = {
+  address: "0x4",
+  username: "user_4",
+  lookingFor: "Female",
+  verified: "Orb",
+  name: "User 3",
+  profilePictureId: "someblobId3",
+  gender: "Male",
+  preferences: ["dogs", "cats"],
+  age: 23,
+  city: "Mumbai",
+  contact: "telegram",
+  messages: [
+    { address: "0xdef456...", content: "Some more random message", counter: 1 },
+    {
+      address: "0xdef456...",
+      content: "Be careful, he can steal your heart",
+      counter: 2,
+    },
+    { address: "0xdef456...", content: "You should message him", counter: 3 },
+  ],
+};
+const userData5: UserData = {
+  address: "0x5",
+  username: "user_5",
+  lookingFor: "Female",
+  verified: "Orb",
+  name: "User 3",
+  profilePictureId: "someblobId3",
+  gender: "Male",
+  preferences: ["dogs", "cats"],
+  age: 23,
+  city: "Mumbai",
+  contact: "telegram",
+  messages: [
+    { address: "0xdef456...", content: "Nice guy to talk to", counter: 1 },
+    {
+      address: "0xdef456...",
+      content: "Be careful, he can steal your heart",
+      counter: 2,
+    },
+    { address: "0xdef456...", content: "You should message him", counter: 3 },
+  ],
+};
+const userData6: UserData = {
+  address: "0x6",
+  username: "user_6",
+  lookingFor: "Female",
+  verified: "Orb",
+  name: "User 3",
+  profilePictureId: "someblobId3",
+  gender: "Male",
+  preferences: ["dogs", "cats"],
+  age: 23,
+  city: "Mumbai",
+  contact: "telegram",
+  messages: [
+    { address: "0xdef456...", content: "Nice guy to talk to", counter: 1 },
+    {
+      address: "0xdef456...",
+      content: "Be careful, he can steal your heart",
+      counter: 2,
+    },
+    { address: "0xdef456...", content: "You should message him", counter: 3 },
+  ],
+};
+const userData7: UserData = {
+  address: "0x7",
+  username: "user_7",
+  lookingFor: "Female",
+  verified: "Orb",
+  name: "User 3",
+  profilePictureId: "someblobId3",
+  gender: "Male",
+  preferences: ["dogs", "cats"],
+  age: 23,
+  city: "Mumbai",
+  contact: "telegram",
+  messages: [
+    { address: "0xdef456...", content: "Nice guy to talk to", counter: 1 },
+    {
+      address: "0xdef456...",
+      content: "Be careful, he can steal your heart",
+      counter: 2,
+    },
+    { address: "0xdef456...", content: "You should message him", counter: 3 },
+  ],
+};
+// const userDataTest: UserData = {
 //   address: "0xbcb60c70a4b3178bea91e8ad04e5ed73aa48a9c7",
-//   username: "user_4",
+//   username: "user_test",
 //   lookingFor: "Male",
 //   verified: "Orb",
 //   name: "User 4",
@@ -320,7 +408,10 @@ const userData3: UserData = {
 createNode(userData1);
 createNode(userData2);
 createNode(userData3);
-// createNode(userData4);
+createNode(userData4);
+createNode(userData5);
+createNode(userData6);
+createNode(userData7);
 
 createRelationship({
   type: "like",
