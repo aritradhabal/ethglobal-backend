@@ -294,28 +294,28 @@ const userData3: UserData = {
     { address: "0xdef456...", content: "You should message him", counter: 3 },
   ],
 };
-const userData4: UserData = {
-  address: "0xbcb60c70a4b3178bea91e8ad04e5ed73aa48a9c7",
-  username: "user_4",
-  lookingFor: "Male",
-  verified: "Orb",
-  name: "User 4",
-  profilePictureId: "someblobId3",
-  gender: "Female",
-  preferences: ["dogs", "cats"],
-  age: 23,
-  city: "Delhi",
-  contact: "telegram",
-  messages: [
-    { address: "0xdef456...", content: "Nice man", counter: 1 },
-    {
-      address: "0xdef456...",
-      content: "Be careful, he can steal your heart",
-      counter: 2,
-    },
-    { address: "0xdef456...", content: "You should message him", counter: 3 },
-  ],
-};
+// const userData4: UserData = {
+//   address: "0xbcb60c70a4b3178bea91e8ad04e5ed73aa48a9c7",
+//   username: "user_4",
+//   lookingFor: "Male",
+//   verified: "Orb",
+//   name: "User 4",
+//   profilePictureId: "someblobId3",
+//   gender: "Female",
+//   preferences: ["dogs", "cats"],
+//   age: 23,
+//   city: "Delhi",
+//   contact: "telegram",
+//   messages: [
+//     { address: "0xdef456...", content: "Nice man", counter: 1 },
+//     {
+//       address: "0xdef456...",
+//       content: "Be careful, he can steal your heart",
+//       counter: 2,
+//     },
+//     { address: "0xdef456...", content: "You should message him", counter: 3 },
+//   ],
+// };
 
 createNode(userData1);
 createNode(userData2);
