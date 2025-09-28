@@ -38,26 +38,26 @@ const debounce = <F extends (...args: any[]) => any>(
 
 const saveGraph = async () => {
   console.log("Running save graph...");
-  // try {
-  //   const result = await graphService.saveGraph({
-  //     name: "ETHMatch",
-  //     description: "Created by ETHMatch",
-  //   });
-  //   console.log("✅ Graph saved to Walrus:", result);
+  try {
+    const result = await graphService.saveGraph({
+      name: "ETHMatch",
+      description: "Created by ETHMatch",
+    });
+    console.log("✅ Graph saved to Walrus:", result);
 
-  //   state = {
-  //     ...state,
-  //     savedGraphInfo: {
-  //       blobId: result.blobId,
-  //       timestamp: new Date().toISOString(),
-  //       name: "ETHMatch",
-  //     },
-  //   };
-  //   updateState();
-  //   return result.blobId;
-  // } catch (error) {
-  //   throw new Error("❌ Error saving graph");
-  // }
+    state = {
+      ...state,
+      savedGraphInfo: {
+        blobId: result.blobId,
+        timestamp: new Date().toISOString(),
+        name: "ETHMatch",
+      },
+    };
+    updateState();
+    return result.blobId;
+  } catch (error) {
+    throw new Error("❌ Error saving graph");
+  }
 };
 
 const SAVE_DEBOUNCE_DELAY = 5000; // 5 seconds
@@ -203,10 +203,6 @@ export const getIncomingRelationships = (
         contact,
       };
     });
-  // .map((relationship) => ({
-  //   sourceId: relationship.sourceId,
-  //   timestamp: relationship.properties.timestamp,
-  // }));
 };
 
 export const getMatches = (address: string) => {
